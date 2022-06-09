@@ -1,5 +1,5 @@
 const keys = document.querySelectorAll('.key')
-console.log(keys)
+
 
 function playSound({keyCode}) {    
     const audio = document.querySelector(`audio[data-key='${keyCode}']`);
@@ -18,10 +18,11 @@ function playSound({keyCode}) {
 
 
 function end(e) {
-    if (!e.propertyName !== 'transform' ) return
-    this.classList.remove('playing')
+    if (!e.propertyName !== 'transform' ) return;
+
+    this.classList.remove('playing');
     
-}
+};
 
 
 
